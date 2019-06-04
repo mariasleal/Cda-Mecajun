@@ -1,0 +1,109 @@
+Documento criado com o intuito de relatar os avanços e passos realizados
+durante o processo de implementação do projeto CdA - PCI
+
+1o passo - Instalação do web server (Apache)
+	cmd: sudo apt-get install apache2 -y
+	
+	O relatorio desse comando pode ser visto na pasta relatorios (Instapache)
+	Como pode ser visto, ocorreram alguns error durante a instalação
+	Os erros ocorreram pois o rasp estava desconectado da internet por algum motivo
+	Rodei o comando: sudo apt-get update e novamente o código de instalação do apache
+	A instalação foi bem sucedida e o relatório pode ser visto no mesmo local citado acima
+
+2o passo - Instalação do PHP 
+	cmd: sudo apt-get install php5 libapache2-mod-php5 -y
+
+	De acordo com o relatório da instalação, o php5 se tornou obsoleto para o OS stretch utilizado no raspberry
+	Utilizei como alternativa o seguinte comando para a intalação do php7:
+	cmd: sudo apt-get install php libapache2-mod-php -y
+	Aparentemente a instalação foi completa, a versão instalada foi a php7.0
+
+3o passo - Instalação do banco de dados PostgreSQL
+	cmd: sudo apt-get install php7.0-pgsql postgresql -y
+
+	Everything went better that expected.
+	cmd2: sudo apt install postgresql-server-dev-all
+
+4o passo - Instalação da biblioteca do PostgreSQL para python (Psycopg2):
+	cmd1: sudo pip install -U pip
+	cmd2: sudo pip install psycopg2
+	
+	OK!
+
+5o passo - Criação do código para a leitura de cartões RFID:
+	Clonei o repositório no git para utilização do módulo SPI-Py
+	cmd: git clone https://github.com/lthiery/SPI-Py spi-py
+	cmd2: cd spi-py
+	cmd3: sudo python setup.py install
+
+	Para a utilização do RC522, rodei os seguintes comandos:
+	cmd: git clone https://github.com/mxgxw/MFRC522-python MRFC522
+
+6o passo - Teste do Hardware
+	As ligações do raspberry e do rc522 foram feitas de acordo com o Readme 
+	disponível na pasta do git de utilização do rc.
+	O teste de hardware inicialmente apresenteu algumas falhas, do tipo que o leitor
+	RC522 não detectava nenhum cartão.
+	Para contornar este fato, foi alterado o arquivo /boot/config.txt para adicionar a seguinte linha:
+	dtoverlay=spi-bcm2708
+	Um possível mau-contato entre o leitor e a protoboard também foi corrigido
+	A partir desse ponto o leitor funcionou bem.
+
+7o passo - Criação do banco de dados.
+	Para a conexão com o server:
+	cmd: psql -U postgres -h localhost
+	Para alterar a senha de acesso:
+		conexão:
+		cmd: sudo -u postgres psql postgres
+		trocar a senha: (Quando já conectado ao psql)
+		\password postgres
+	Para a criação do banco de dados:
+	cmd: CREATE DATABASE cda;
+	São necessárias 6 tabelas nesse BD, são elas:
+		- Usuários com acesso para alterar o BD;
+		- Historico de modificação pelo usuário;
+		- Lista de membros;
+		- Log da porta;
+		- Histórico diário;
+		- Tabela de pontos cumpridos (ou não) pelos membros.
+	Usou-se um código em python para criar essas tabelas, o código pode ser visto na pasta códigos.
+
+8o passo - Criação do site para acesso ao DB em php
+	Para começar tive que mudar o dono da pasta www no raspberry, pois é nela que ficam
+	os arquivos html, php, css relativos ao site.
+	Para garantir acesso ao usuário padrão (pi) do rasp:
+	cmd:  sudo adduser pi www-data
+	cmd2: sudo chown -R www-data:www-data /var/www
+	cmd3: sudo chmod -R g+rw /var/www
+	cmd4: sudo shutdown -r now
+
+	Para compartilhar a pasta www com a rede:
+	Instalação do Samba:
+	cmd: sudo apt-get install samba samba-common-bin
+	Abra então o arquivo /etc/samba/smb.conf
+	e escreva no final:
+		[www]
+		path = /var/www
+		writeable = yes
+
+9o passo - Criação do código principal python
+	O código pode ser encontrado na pasta codigos/MFRC522
+	
+10 passo - Estruturação do site:
+	Baixando os códigos em php do git, começei pelo index.php e, lendo o código,
+	fui descobrindo sequencialmente os próximos arquivos a serem baixados e fazendo alterações
+	necessárias.
+	Todos os arquivos necessários foram bem comentados e estão disponíveis no drive da Mecajun.
+	
+A fazer - 
+	Modificar o edit para apagar horário um por um - OK!
+	Incluir modificações de membros no historico - OK!
+	Tratamento de erros com logins repetidos dos usuários - OK!
+	Proteção contra SQL injections - OK!
+	O novo nome de um membro não pode ser igual a algum já existente - OK!
+	Mudar a pagina de relatorios para mostrar um relatorio diario do log da porta - OK!
+	Quando modificar o nome do membro, modificar também todas as tabelas com esse nome - OK!
+	Inserir os dados na tabela de pontos de acordo com o RFID - OK!
+	Modificar o relatorio individual com a nova tabela de pontos - OK!
+	Inicializar o programa em python toda vez que o rasp for ligado - OK!
+	Conversar com o Carlos se será necessário limitar o tamanho das tabelas no SQL

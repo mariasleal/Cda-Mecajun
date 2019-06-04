@@ -1,0 +1,16 @@
+cmd1: sudo pip install -U pip
+
+Requirement already up-to-date: pip in /usr/lib/python2.7/dist-packages
+
+cmd2: sudo pip install psycopg2
+
+Collecting psycopg2
+  Downloading psycopg2-2.7.3.2.tar.gz (425kB)
+    100% |████████████████████████████████| 430kB 251kB/s 
+Building wheels for collected packages: psycopg2
+  Running setup.py bdist_wheel for psycopg2 ... done
+  Stored in directory: /root/.cache/pip/wheels/2d/36/e9/f34db5daeef2243dd958b8f402ad7a5d9d579bcf2bbea9a830
+Successfully built psycopg2
+Installing collected packages: psycopg2
+Successfully installed psycopg2-2.7.3.2
+

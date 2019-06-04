@@ -1,0 +1,165 @@
+﻿body{
+	background-color: white;
+	margin: 0%;
+    	padding: 0%;
+	height: 100%;
+	font-family: Calibri (Corpo);
+	font-size: 12px;
+	width: 100%;
+	margin-top:10%; 	
+}
+.sharingan{
+	border: 1px solid red;
+}
+h2{
+	text-align: center;
+	font-family: Calibri (Corpo);
+	font-size: 40px;
+	margin-top: 1%;
+}
+p{
+	font-family: Calibri (Corpo);
+}
+div.Menu1{
+    	float: Left;
+      	width: 26.67%;
+    	height: 200px;
+	margin-left: 2%;
+}
+div.Menu2{
+    	float: right;
+    	width: 26.67%;
+    	height: 200px;
+	text-align: justify;
+	margin-right: 2%;
+}
+div.Menu3{
+    	width: 26.67%;
+    	height: 200px;
+	text-align: justify;
+	margin-left: 36.67%;
+}
+div.Menu5{
+	float: right;
+      	width: 26.67%;
+    	height: 200px;
+	margin: 25px 8% 25px 0px;
+}
+div.Menu4{
+	float: right;
+      	width: 26.67%;
+	height: 200px;
+	margin: 25px 2% 25px 0px;
+}
+div.Menu6{
+    	width: 26.67%;
+    	height: 200px;
+	text-align: justify;
+	margin-left: 36.67%;
+	margin: 25px 0px 25px 2%;
+}
+input[type=button]{
+	width: 100%;
+	height: 100%;
+	font-family: Calibri (Corpo);
+	font-size: 30px;
+    	color: black;
+    	border: none;
+    	cursor: pointer;
+	font-weight: bold;
+}
+header{
+    	color: black;
+   	background-color: #DC143C;
+   	clear: left;
+    	text-align: left;
+	position: fixed;
+	top: 0;
+    	width: 100%;
+	height: 80px;
+}
+footer{
+	padding: 1em;
+    	color: white;
+   	background-color: #DC143C;
+   	clear: left;
+    	text-align: left;
+	position: fixed;
+	bottom: 0;
+    	width: 100%;
+}
+input[type=button]:hover {
+    	color: #DC143C;
+	font-weight: bold;
+}
+input{
+	border-radius: 10px;
+}
+b:link {
+    	text-decoration: none;
+	color: white;
+}
+
+a.b:visited {
+    	text-decoration: none;
+	color: black;
+}
+
+a.b:hover {
+    	text-decoration: none;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+    	text-decoration: underline;
+}
+ul {
+    	list-style-type: none;
+    	margin: -4.2% 0px 0px 0px;
+   	padding: 0;
+   	overflow: hidden;
+    	background-color: #333;
+	font-family: Calibri (Corpo);
+	font-size: 18px;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    	display: block;
+    	text-align: center;
+    	padding: 14px 16px;
+	text-decoration: none;
+	
+}
+
+li a:hover:not(.active) {
+    	background-color: #111;
+	color: #DC143C;
+}
+
+.active{
+    	background-color: #DC143C;
+}
+.aba_login{
+	background-color: #DC143C;
+	border-radius:5px;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:140px;
+}
+.aba_login table{
+	margin-left:auto;
+	margin-right:auto;
+}
+.aba_login div{
+	width:40px;
+	margin-left:auto;
+	margin-right:auto;
+}

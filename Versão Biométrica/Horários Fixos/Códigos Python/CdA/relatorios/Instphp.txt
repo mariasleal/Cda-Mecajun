@@ -1,0 +1,134 @@
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package php5 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package libapache2-mod-php5 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'php5' has no installation candidate
+E: Package 'libapache2-mod-php5' has no installation candidate
+
+2a Tentativa
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libapache2-mod-php7.0 php-common php7.0 php7.0-cli php7.0-common php7.0-json
+  php7.0-opcache php7.0-readline
+Suggested packages:
+  php-pear
+The following NEW packages will be installed:
+  libapache2-mod-php libapache2-mod-php7.0 php php-common php7.0 php7.0-cli
+  php7.0-common php7.0-json php7.0-opcache php7.0-readline
+0 upgraded, 10 newly installed, 0 to remove and 138 not upgraded.
+Need to get 2,711 kB of archives.
+After this operation, 11.1 MB of additional disk space will be used.
+Get:1 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php-common all 1:49 [14.1 kB]
+Get:2 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0-common armhf 7.0.19-1 [480 kB]
+Get:3 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0-json armhf 7.0.19-1 [15.3 kB]
+Get:4 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0-opcache armhf 7.0.19-1 [64.8 kB]
+Get:5 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0-readline armhf 7.0.19-1 [10.8 kB]
+Get:6 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0-cli armhf 7.0.19-1 [1,054 kB]
+Get:7 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libapache2-mod-php7.0 armhf 7.0.19-1 [1,014 kB]
+Get:8 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libapache2-mod-php all 1:7.0+49 [5,168 B]
+Get:9 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php7.0 all 7.0.19-1 [48.7 kB]
+Get:10 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf php all 1:7.0+49 [5,016 B]
+Fetched 2,711 kB in 6s (436 kB/s)                                              
+Selecting previously unselected package php-common.
+(Reading database ... 123391 files and directories currently installed.)
+Preparing to unpack .../0-php-common_1%3a49_all.deb ...
+Unpacking php-common (1:49) ...
+Selecting previously unselected package php7.0-common.
+Preparing to unpack .../1-php7.0-common_7.0.19-1_armhf.deb ...
+Unpacking php7.0-common (7.0.19-1) ...
+Selecting previously unselected package php7.0-json.
+Preparing to unpack .../2-php7.0-json_7.0.19-1_armhf.deb ...
+Unpacking php7.0-json (7.0.19-1) ...
+Selecting previously unselected package php7.0-opcache.
+Preparing to unpack .../3-php7.0-opcache_7.0.19-1_armhf.deb ...
+Unpacking php7.0-opcache (7.0.19-1) ...
+Selecting previously unselected package php7.0-readline.
+Preparing to unpack .../4-php7.0-readline_7.0.19-1_armhf.deb ...
+Unpacking php7.0-readline (7.0.19-1) ...
+Selecting previously unselected package php7.0-cli.
+Preparing to unpack .../5-php7.0-cli_7.0.19-1_armhf.deb ...
+Unpacking php7.0-cli (7.0.19-1) ...
+Selecting previously unselected package libapache2-mod-php7.0.
+Preparing to unpack .../6-libapache2-mod-php7.0_7.0.19-1_armhf.deb ...
+Unpacking libapache2-mod-php7.0 (7.0.19-1) ...
+Selecting previously unselected package libapache2-mod-php.
+Preparing to unpack .../7-libapache2-mod-php_1%3a7.0+49_all.deb ...
+Unpacking libapache2-mod-php (1:7.0+49) ...
+Selecting previously unselected package php7.0.
+Preparing to unpack .../8-php7.0_7.0.19-1_all.deb ...
+Unpacking php7.0 (7.0.19-1) ...
+Selecting previously unselected package php.
+Preparing to unpack .../9-php_1%3a7.0+49_all.deb ...
+Unpacking php (1:7.0+49) ...
+Setting up php-common (1:49) ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+Processing triggers for man-db (2.7.6.1-2) ...
+Setting up php7.0-common (7.0.19-1) ...
+
+Creating config file /etc/php/7.0/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/exif.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/phar.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/posix.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/7.0/mods-available/tokenizer.ini with new version
+Setting up php7.0-readline (7.0.19-1) ...
+
+Creating config file /etc/php/7.0/mods-available/readline.ini with new version
+Setting up php7.0-opcache (7.0.19-1) ...
+
+Creating config file /etc/php/7.0/mods-available/opcache.ini with new version
+Setting up php7.0-json (7.0.19-1) ...
+
+Creating config file /etc/php/7.0/mods-available/json.ini with new version
+Setting up php7.0-cli (7.0.19-1) ...
+update-alternatives: using /usr/bin/php7.0 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar7.0 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar7.0 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+
+Creating config file /etc/php/7.0/cli/php.ini with new version
+Setting up libapache2-mod-php7.0 (7.0.19-1) ...
+
+Creating config file /etc/php/7.0/apache2/php.ini with new version
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+apache2_switch_mpm Switch to prefork
+apache2_invoke: Enable module php7.0
+Setting up libapache2-mod-php (1:7.0+49) ...
+Setting up php7.0 (7.0.19-1) ...
+Setting up php (1:7.0+49) ...
+

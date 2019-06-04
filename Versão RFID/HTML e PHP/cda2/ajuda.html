@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head><header>
+		<link rel="stylesheet" type="text/css" href="Controle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Controle de Acesso</title>
+		<a class="b" href="menu.php"><h2>Controle de Acesso</h2></a>
+
+	</header>
+		<style>
+			.m3 td{
+				padding: 15px;
+				border: 1px solid gray;
+				text-align:center;
+			}
+			.m3 h3{
+
+				padding: 5px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul>
+  			<li><a href="menu.php">Início</a></li>
+			<li><a href="relatorios.php">Relatórios</a></li>
+  			<li><a href="horarios.php">Horários</a></li>
+  			<li><a href="editar-membro.php">Editar Membro</a></li>
+  			<li><a href="relatorio-individual.php">Relatório Individual</a></li>
+			<li><a href="painel.php">Painel de Controle</a></li>
+			<li><a class="active" href="ajuda.html">Ajuda</a></li>
+		</ul>
+
+		<div >
+			<table class="m3" style="margin:auto; margin-top:20px">
+			<tr>
+				<td><a style="color:black" href="#H"><h3>Horários</h3></a></td>
+				<td><a style="color:black" href="#edit"><h3>Editar Membro</h3></a><a style="color:black" href="#add">Adicionar</a><br><a style="color:black" href="#ed">Editar</a><br><a style="color:black" href="#re">Remover</a></td>
+				<td><a style="color:black" href="#PC"><h3>Painel de Controle</h3></a></a><a style="color:black" href="#pcadd">Adicionar</a><br><a style="color:black" href="#pced">Editar</a><br><a style="color:black" href="#pcre">Remover</a></td>
+				<td><a style="color:black" href="#RELI"><h3>Relatório Individual</h3></a></td>
+			</tr>
+			</table>
+		</div>
+
+
+	<p id="H"></p><br><br><br><br><br>
+	<h3> Horários </h3>
+	<p> A página de horários serve para verificar o horário de trabalho dos membros.</p>
+	<img src="ajuda/Horarios.png" alt="Horarios.png" title="Horarios.png" />
+
+	<p id="edit"></p><br><br><br><br><br>
+	<h3> Editar Membro </h3>
+		<p> Esta é a página responsável pelo gerenciamento dos membros da EJ.</p>
+		<p> Ao entrar nesta página, estas 3 opções estarão disponiveis. </p>		
+		<img src="ajuda/Edit1.png" alt="Edit1.png" title="Edit1.png" />
+
+		<p id="add"></p><br><br><br><br><br>
+		<h4> Adicionar Membro </h4>
+		<p> Nesta página, os membros poderão ser adicionados. Para tal, deve-se preencher os campos abaixo.</p>
+		<p> Para cadastrar um cartão a um membro, é necessário deixá-lo sobre o sensor RFID até o LED alternar em sequência as cores azul, verde e vermelho.
+	 	Pode-se cadastrar somente um membro por vez. Deve-se cadastrar um cartão para ele antes de adicionar outro membro.</p>
+		<img src="ajuda/Add.png" alt="Add.png" title="Add.png" />
+	
+		<p id="ed"></p><br><br><br><br><br>
+		<h4> Editar Membro</h4>
+		<p> Para editar um membro, basta clicar em "Editar Membro" e mudar os campos que desejar.</p>
+		<img src="ajuda/Edit2.png" alt="Edit2.png" title="Edit2.png" />
+		<img src="ajuda/Edit3.png" alt="Edit3.png" title="Edit3.png" />
+	
+		<p id="re"></p><br><br><br><br><br>
+		<h4> Remover Membro </h4>
+		<Para excluir um membro, basta clicar em "Excluir Membro", digitar seu nome e confirmar que quer excluí-lo.>
+		<img src="ajuda/Rem.png" alt="Rem.png" title="Rem.png" />
+
+	<p id="PC"></p><br><br><br><br><br>
+	<h3> Painel de Controle </h3>
+		<p>Esta pagina é destinada a ver alterações feitas por usuários do sitema e a adicionar, editar e excluir usuários.</p>
+		<img src="ajuda/Painel.png" alt="Painel.png" title="Painel.png" />
+		
+		<p id="pcadd"></p><br><br><br><br><br>
+		<h4>Adicionar</h4>
+		<p>Cliclando em "Adicionar", podemos adicionar um novo usuário. Para isso, basta preencher os campos da foto.
+		Deve-se prestar atenção aos níveis de permissões, no qual uma permissão maior permite editar ou excluir usuários com permissões menores. </p>
+		<img src="ajuda/Addu.png" alt="Addu.png" title="Addu.png" />
+
+		<p id="pced"></p><br><br><br><br><br>
+		<h4>Editar</h4>
+		<p> Primeiro, deve-se pesquisar o usuário a ser alterado.</p>
+		<p> Após pesquisar o usuário a ser alterado, deve-se editar o que desejar.</p>
+		<img src="ajuda/Editu.png" alt="Editu.png" title="Editu.png" />
+
+		<p id="pcre"></p><br><br><br><br><br>
+		<h4>Excluir</h4>
+		<p> Para excluir um usuário. deve-se pesquisá-lo, clicar em "Excluir" e confirmar esta escolha.</p>
+		<img src="ajuda/Remu.png" alt="Remu.png" title="Remu.png" />
+	
+	<p id="RELI"></p><br><br><br><br><br>
+	<h3> Relatório Individual </h3>
+		<p>O relatório individual permite ao usuário obter um resumo do mês de um membro específico (Ponto de entrada e saída, hora extra, ...). Para
+		gerar o relatório basta digitar o nome do membro, selecionar o mês desejado e clicar no botão pesquisar.</p>
+		<img src="ajuda/Relind.png" alt="Relin.png" title="Relatorio Individual"/>
+
+	<br><br><br><br><br>
+	</body>
+	<footer>
+		Copyright ©<a href="http://www.mecajun.com/" target="_blank">Mecajun</a>	
+	</footer>
+</html>

@@ -1,0 +1,151 @@
+Reading package lists... Done
+Building dependency tree        
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+  openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,948 kB of archives.
+After this operation, 6,263 kB of additional disk space will be used.
+Err:1 http://mirrordirector.raspbian.org/raspbian stretch/main armhf libapr1 armhf 1.5.2-5
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:2 http://mirrordirector.raspbian.org/raspbian stretch/main armhf libaprutil1 armhf 1.5.4-3
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:3 http://mirrordirector.raspbian.org/raspbian stretch/main armhf libaprutil1-dbd-sqlite3 armhf 1.5.4-3
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:4 http://mirrordirector.raspbian.org/raspbian stretch/main armhf libaprutil1-ldap armhf 1.5.4-3
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:5 http://mirrordirector.raspbian.org/raspbian stretch/main armhf liblua5.2-0 armhf 5.2.4-1.1
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:6 http://mirrordirector.raspbian.org/raspbian stretch/main armhf apache2-bin armhf 2.4.25-3+deb9u2
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:7 http://mirrordirector.raspbian.org/raspbian stretch/main armhf apache2-utils armhf 2.4.25-3+deb9u2
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:8 http://mirrordirector.raspbian.org/raspbian stretch/main armhf apache2-data all 2.4.25-3+deb9u2
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:9 http://mirrordirector.raspbian.org/raspbian stretch/main armhf apache2 armhf 2.4.25-3+deb9u2
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+Err:10 http://mirrordirector.raspbian.org/raspbian stretch/main armhf ssl-cert all 1.0.39
+  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apr/libapr1_1.5.2-5_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apr-util/libaprutil1_1.5.4-3_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.4-3_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apr-util/libaprutil1-ldap_1.5.4-3_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/l/lua5.2/liblua5.2-0_5.2.4-1.1_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apache2/apache2-bin_2.4.25-3+deb9u2_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apache2/apache2-utils_2.4.25-3+deb9u2_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apache2/apache2-data_2.4.25-3+deb9u2_all.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/a/apache2/apache2_2.4.25-3+deb9u2_armhf.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Failed to fetch http://mirrordirector.raspbian.org/raspbian/pool/main/s/ssl-cert/ssl-cert_1.0.39_all.deb  Temporary failure resolving 'mirrordirector.raspbian.org'
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+
+2a Tentativa:
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+  openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 138 not upgraded.
+Need to get 1,948 kB of archives.
+After this operation, 6,263 kB of additional disk space will be used.
+Get:1 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libapr1 armhf 1.5.2-5 [79.8 kB]
+Get:2 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libaprutil1 armhf 1.5.4-3 [75.9 kB]
+Get:3 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libaprutil1-dbd-sqlite3 armhf 1.5.4-3 [17.9 kB]
+Get:4 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf libaprutil1-ldap armhf 1.5.4-3 [16.9 kB]
+Get:5 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf liblua5.2-0 armhf 5.2.4-1.1 [82.8 kB]
+Get:6 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf apache2-bin armhf 2.4.25-3+deb9u3 [1,038 kB]
+Get:7 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf apache2-utils armhf 2.4.25-3+deb9u3 [218 kB]
+Get:8 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf apache2-data all 2.4.25-3+deb9u3 [162 kB]
+Get:9 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf apache2 armhf 2.4.25-3+deb9u3 [235 kB]
+Get:10 http://mirror.nbtelecom.com.br/raspberryPI/raspbian stretch/main armhf ssl-cert all 1.0.39 [20.8 kB]
+Fetched 1,948 kB in 7s (259 kB/s)                                              
+Preconfiguring packages ...
+Selecting previously unselected package libapr1:armhf.
+(Reading database ... 122683 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.5.2-5_armhf.deb ...
+Unpacking libapr1:armhf (1.5.2-5) ...
+Selecting previously unselected package libaprutil1:armhf.
+Preparing to unpack .../1-libaprutil1_1.5.4-3_armhf.deb ...
+Unpacking libaprutil1:armhf (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:armhf.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.5.4-3_armhf.deb ...
+Unpacking libaprutil1-dbd-sqlite3:armhf (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-ldap:armhf.
+Preparing to unpack .../3-libaprutil1-ldap_1.5.4-3_armhf.deb ...
+Unpacking libaprutil1-ldap:armhf (1.5.4-3) ...
+Selecting previously unselected package liblua5.2-0:armhf.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1_armhf.deb ...
+Unpacking liblua5.2-0:armhf (5.2.4-1.1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.25-3+deb9u3_armhf.deb ...
+Unpacking apache2-bin (2.4.25-3+deb9u3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.25-3+deb9u3_armhf.deb ...
+Unpacking apache2-utils (2.4.25-3+deb9u3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../7-apache2-data_2.4.25-3+deb9u3_all.deb ...
+Unpacking apache2-data (2.4.25-3+deb9u3) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.25-3+deb9u3_armhf.deb ...
+Unpacking apache2 (2.4.25-3+deb9u3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+Setting up libapr1:armhf (1.5.2-5) ...
+Setting up apache2-data (2.4.25-3+deb9u3) ...
+Setting up ssl-cert (1.0.39) ...
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
+Setting up libaprutil1:armhf (1.5.4-3) ...
+Processing triggers for systemd (232-25+deb9u1) ...
+Processing triggers for man-db (2.7.6.1-2) ...
+Setting up liblua5.2-0:armhf (5.2.4-1.1) ...
+Setting up libaprutil1-ldap:armhf (1.5.4-3) ...
+Setting up libaprutil1-dbd-sqlite3:armhf (1.5.4-3) ...
+Setting up apache2-utils (2.4.25-3+deb9u3) ...
+Setting up apache2-bin (2.4.25-3+deb9u3) ...
+Setting up apache2 (2.4.25-3+deb9u3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
+Processing triggers for systemd (232-25+deb9u1) ...
+
