@@ -1,2 +1,2 @@
 # Cda-Mecajun
-Códigos do CDA- Mecajun 
+Códigos para a realização do projeto do CDA-Mecajun 
